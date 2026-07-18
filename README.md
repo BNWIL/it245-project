@@ -17,3 +17,24 @@ The group has selected the project topic and started planning the two solutions.
 - Member 2: [Name]
 - Member 3: [Name]
 - Member 4: [Name]
+
+## System Operations
+
+- Insert a new book
+- Search using Book ID
+- Display a selected book
+- Display all stored books
+
+## Book Information
+
+Each book contains:
+
+- Book ID
+- Title
+- Author
+- Publication year
+
+## Planned Solutions
+
+1. Hash Table using Book ID as the key
+2. Binary Search Tree organized by Book ID
