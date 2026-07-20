@@ -1,1 +1,32 @@
+import java.util.LinkedList;
 
+public class BookHashTable {
+    private LinkedList<Book>[] table;
+
+    @SuppressWarnings("unchecked")
+    public BookHashTable(int size) {
+        table = new LinkedList[size];
+
+        for (int i = 0; i < size; i++) {
+            table[i] = new LinkedList<>();
+        }
+    }
+
+    private int hash(int bookId) {
+        return Math.floorMod(bookId, table.length);
+    }
+
+    public void insertBook(Book book) {
+        int index = hash(book.getBookId());
+
+        for (Book existingBook : table[index]) {
+            if (existingBook.getBookId() == book.getBookId()) {
+                System.out.println("Book ID already exists.");
+                return;
+            }
+        }
+
+        table[index].add(book);
+        System.out.println("Book added successfully.");
+    }
+}
