@@ -9,7 +9,7 @@ The project compares two solutions for organizing and searching book records:
 
 ## Current Status
 
-The group has selected the project topic and started planning the two solutions.
+The group has created the Book class and implemented the initial Hash Table insertion operation using Java. Duplicate Book IDs are currently rejected.
 
 ## Team Members
 
@@ -38,3 +38,13 @@ Each book contains:
 
 1. Hash Table using Book ID as the key
 2. Binary Search Tree organized by Book ID
+
+## Expected Output
+
+```text
+Book added successfully.
+Book added successfully.
+Book ID already exists.
+```
+
+
