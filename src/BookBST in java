@@ -1,0 +1,11 @@
+public class BookBST {
+    private BookNode root;
+
+    public BookBST() {
+        root = null;
+    }
+
+    public boolean isEmpty() {
+        return root == null;
+    }
+}
