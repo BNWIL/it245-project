@@ -61,5 +61,17 @@ public class Main {
         }
 
         hashTable.displayBooks();
+
+        // Test Binary Search Tree insertion
+        System.out.println("\n--- Binary Search Tree Insertion Test ---");
+
+        BookBST bookBST = new BookBST();
+
+        bookBST.insertBook(book1);
+        bookBST.insertBook(book2);
+        bookBST.insertBook(book3);
+
+        // Test a duplicate Book ID
+        bookBST.insertBook(duplicateBook);
     }
 }
