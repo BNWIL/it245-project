@@ -54,3 +54,42 @@ public class BookBST {
         }
     }
 }
+public Book searchBook(int bookId) {
+    BookNode current = root;
+
+    while (current != null) {
+        int currentId = current.getBook().getBookId();
+
+        if (bookId == currentId) {
+            return current.getBook();
+        } else if (bookId < currentId) {
+            current = current.getLeft();
+        } else {
+            current = current.getRight();
+        }
+    }
+
+    return null;
+}
+
+public boolean containsBook(int bookId) {
+    return searchBook(bookId) != null;
+}
+
+public void displayBooksInOrder() {
+    if (root == null) {
+        System.out.println("No books are stored in the BST.");
+        return;
+    }
+
+    System.out.println("\nBooks stored in the BST:");
+    displayBooksInOrder(root);
+}
+
+private void displayBooksInOrder(BookNode node) {
+    if (node != null) {
+        displayBooksInOrder(node.getLeft());
+        System.out.println(node.getBook());
+        displayBooksInOrder(node.getRight());
+    }
+}
