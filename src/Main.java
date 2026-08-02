@@ -73,5 +73,30 @@ public class Main {
 
         // Test a duplicate Book ID
         bookBST.insertBook(duplicateBook);
+
+        // Search BST for an existing book
+        System.out.println("\nSearching BST for Book ID 111:");
+
+        Book bstFoundBook = bookBST.searchBook(111);
+
+        if (bstFoundBook != null) {
+            System.out.println(bstFoundBook);
+        } else {
+            System.out.println("Book not found.");
+        }
+
+        // Search BST for a missing book
+        System.out.println("\nSearching BST for Book ID 999:");
+
+        bstFoundBook = bookBST.searchBook(999);
+
+        if (bstFoundBook != null) {
+            System.out.println(bstFoundBook);
+        } else {
+            System.out.println("Book not found.");
+        }
+
+        // Display BST books in ascending Book ID order
+        bookBST.displayBooksInOrder();
     }
 }
