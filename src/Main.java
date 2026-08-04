@@ -23,11 +23,19 @@ public class Main {
                 "Joyce Farrell",
                 2023
         );
+        
+Book book4 = new Book(
+        95,
+        "Database System Concepts",
+        "Abraham Silberschatz",
+        2019
+);
 
         hashTable.insertBook(book1);
         hashTable.insertBook(book2);
         hashTable.insertBook(book3);
-
+        hashTable.insertBook(book4);
+        
         // Test a duplicate ID
         Book duplicateBook = new Book(
                 101,
@@ -70,6 +78,7 @@ public class Main {
         bookBST.insertBook(book1);
         bookBST.insertBook(book2);
         bookBST.insertBook(book3);
+        bookBST.insertBook(book4);
 
         // Test a duplicate Book ID
         bookBST.insertBook(duplicateBook);
