@@ -15,7 +15,7 @@ The group has created the Book class and implemented the initial Hash Table inse
 
 - Member 1: [OMAR KHALID - s240068665]
 - Member 2: [AHMED ALZAHRANI - s240022816]
-- Member 3: [TALAL ALMUTAIRI - s240040240] //Note: We tried to contact him, but he seemed busy, so we started without him.
+- Member 3: [TALAL ALMUTAIRI - s240040240] 
 
 
 
@@ -60,7 +60,10 @@ The following parts have been completed:
 - `BookBST.java` – Implements the Binary Search Tree
 - `Main.java` – Tests both solutions
 
-## Next Step
+## Binary Search Tree Complexity
 
-Implement BST searching and in-order display, then compare the complexity of both solutions.
+- Insert: O(log n) when balanced, O(n) worst case
+- Search: O(log n) when balanced, O(n) worst case
+- In-order traversal: O(n)
+- Space complexity: O(n)
 
