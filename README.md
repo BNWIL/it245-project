@@ -67,3 +67,12 @@ The following parts have been completed:
 - In-order traversal: O(n)
 - Space complexity: O(n)
 
+## Solution Comparison
+
+The Hash Table provides O(1) average search and insertion,
+while the Binary Search Tree provides O(log n) search and
+insertion when reasonably balanced.
+
+For this Book Inquiry System, the Hash Table is preferred for
+fast Book ID searches. The BST is useful when books need to
+be displayed in sorted order.
